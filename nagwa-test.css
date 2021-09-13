@@ -1,0 +1,37 @@
+html {
+    background-color: black;
+}
+
+p,
+label {
+    color: white;
+}
+
+.view {
+    grid-area: view;
+    border: 1px solid rgb(0, 0, 0);
+    /* width: 75%; */
+    /* float: left; */
+    background-color: cyan;
+}
+
+.setting {
+    grid-area: setting;
+    border: 1px solid red;
+    /* width: 15%; */
+    /* float: right; */
+    /* padding: 2em 1em 2em 1em; */
+    text-align: center;
+    background-color: darkseagreen;
+    padding-bottom: 0.5em;
+}
+
+.page-container {
+    display: grid;
+    grid-template-areas: 'view view view setting';
+    grid-gap: 0.5em;
+}
+
+.page-container>div {
+    font-size: medium;
+}

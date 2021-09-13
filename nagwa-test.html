@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <script type="text/javascript" src="https://livejs.com/live.js"></script> -->
+    <link rel="stylesheet" href="nagwa-test.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="view">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="setting">
+            <p>Welcome to action simulation</p>
+            <label> Angle: <span class="angle-text"></span></label>
+            <input type="range" min="0" max="360" value="100" class="slider" id="angle"><br>
+            <label> Velocity: <span class="velocity-text"></span></label>
+            <input type="range" min="1" max="100" value="50" class="slider" id="velocity"><br>
+            <button class="launchResetBtn" value="Launch">
+                    <span class="button-text">Launch</span>
+                </button>
+            <p id="message" hidden=true> </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="nagwa-test.js"></script>
+</body>
+
+</html>
